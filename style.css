@@ -1,0 +1,21 @@
+body {
+    background-color: lightgrey;
+}
+
+.jumbotron {
+    padding-top: 7rem;
+    background-color: rgb(92, 100, 96);
+    color: white;
+}
+
+#project {
+    background-color: rgb(92, 100, 96);
+}
+
+.text-project {
+    color: white;
+}
+
+section {
+    padding-top: 6rem;
+}

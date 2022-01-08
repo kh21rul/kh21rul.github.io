@@ -1,78 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- ================================== UNICONS ====================================== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <!-- ================================== SWIPPER CSS ====================================== -->
-    <link rel="stylesheet" href="">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-    <!-- ================================== CSS ====================================== -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
 
-    <title>Responsive Portfolio Website</title>
+    <title>My Portfolio | Khairul Aqram</title>
 </head>
-<body>
-    <!-- ================================== HEADER ====================================== -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">Kh21rul</a>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list grid">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="uil uil-home"></i> Home
-                        </a>
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user-circle"></i> About
-                        </a>
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-info-alt"></i> Skills
-                        </a>
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-suitcase-alt"></i> Services
-                        </a>
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-images"></i></i> Portfolio
-                        </a>
-                        <a href="#contactme" class="nav__link">
-                            <i class="uil uil-chat-bubble-user"></i> Contactme
-                        </a>
+<body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Khairul Aqram</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <i class="uil uil-times nav_close" id="nav-close"></i>
             </div>
+        </div>
+    </nav>
 
-            <div class="nav__btns">
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="uil uil-apps"></i>
+    <!-- Akhir Mavbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+        <img src="img/khairul.jpg" alt="Khairul Aqram" width="200" class="rounded-circle m-3 shadow-lg">
+        <h1 class="display-4">Khairul Aqram</h1>
+        <p class="lead">Back End Web Developer</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="lightgrey" fill-opacity="1"
+                d="M0,256L57.6,32L115.2,224L172.8,256L230.4,192L288,192L345.6,64L403.2,256L460.8,0L518.4,224L576,192L633.6,288L691.2,128L748.8,224L806.4,96L864,96L921.6,192L979.2,0L1036.8,32L1094.4,160L1152,320L1209.6,32L1267.2,96L1324.8,224L1382.4,192L1440,96L1440,320L1382.4,320L1324.8,320L1267.2,320L1209.6,320L1152,320L1094.4,320L1036.8,320L979.2,320L921.6,320L864,320L806.4,320L748.8,320L691.2,320L633.6,320L576,320L518.4,320L460.8,320L403.2,320L345.6,320L288,320L230.4,320L172.8,320L115.2,320L57.6,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+    <section id="about" class="mt-1">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2>About Me</h2>
                 </div>
             </div>
+            <div class="row justify-content-center fs-5 text-center">
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure neque repellendus suscipit
+                        aspernatur quam maiores rerum error voluptatum veritatis officiis?</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi rem ullam earum eos
+                        totam. Enim nam nostrum sunt repudiandae, a ullam expedita sed vero!</p>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="rgb(92, 100, 96)" fill-opacity="1"
+                d="M0,96L51.4,64L102.9,96L154.3,192L205.7,128L257.1,192L308.6,224L360,128L411.4,320L462.9,32L514.3,192L565.7,288L617.1,128L668.6,256L720,224L771.4,96L822.9,160L874.3,256L925.7,96L977.1,160L1028.6,32L1080,224L1131.4,32L1182.9,256L1234.3,224L1285.7,224L1337.1,320L1388.6,160L1440,96L1440,320L1388.6,320L1337.1,320L1285.7,320L1234.3,320L1182.9,320L1131.4,320L1080,320L1028.6,320L977.1,320L925.7,320L874.3,320L822.9,320L771.4,320L720,320L668.6,320L617.1,320L565.7,320L514.3,320L462.9,320L411.4,320L360,320L308.6,320L257.1,320L205.7,320L154.3,320L102.9,320L51.4,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Akhir About -->
 
-        </nav>
-    </header>
+    <!-- Project -->
+    <section id="project">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col">
+                    <h2 class="text-project">My Project</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="img/project/fingerprint.jpg" class="card-img-top" alt="Project1">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="img/project/tamiangjek.jpg" class="card-img-top" alt="Project2">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="img/project/scan.jpg" class="card-img-top" alt="Project3">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="img/project/tamiangjek.jpg" class="card-img-top" alt="Project4">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="img/project/scan.jpg" class="card-img-top" alt="Project5">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="mt-3">
+            <path fill="lightgrey" fill-opacity="1"
+                d="M0,32L65.5,192L130.9,96L196.4,256L261.8,128L327.3,96L392.7,288L458.2,320L523.6,160L589.1,160L654.5,256L720,160L785.5,288L850.9,128L916.4,0L981.8,320L1047.3,0L1112.7,192L1178.2,192L1243.6,0L1309.1,224L1374.5,288L1440,160L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Akhir Project -->
 
-    <!-- ================================== MAIN ====================================== -->
-    <main class="main">
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container mt-3">
+            <div class="row text-center">
+                <div class="col">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary center-block">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-    </main>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#212529" fill-opacity="1"
+                d="M0,64L30,80C60,96,120,128,180,133.3C240,139,300,117,360,117.3C420,117,480,139,540,154.7C600,171,660,181,720,160C780,139,840,85,900,74.7C960,64,1020,96,1080,101.3C1140,107,1200,85,1260,96C1320,107,1380,149,1410,170.7L1440,192L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+            </path>
+        </svg>
+    </section>
+    <!-- Akhir Contact -->
 
-    <!-- ================================== FOOTER ====================================== -->
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center pb-5">
+        <p>Created with <i class="bi bi-heart-half"></i> by <a href="https://www.instagram.com/khairul_aqram21/"
+                class="text-white fw-bold">Khairul
+                Aqram</a></p>
+    </footer>
+    <!-- Akhir Footer -->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 
-    <!-- ================================== SCROLL TOP ====================================== -->
-
-
-    <!-- ================================== SWIPER JS ====================================== -->
-    <script src=""></script>
-
-    <!-- ================================== MAIN JS ====================================== -->
-    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
